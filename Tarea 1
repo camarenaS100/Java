@@ -1,0 +1,46 @@
+
+
+package pluma;
+
+import java.util.Scanner;
+
+public class Pluma {
+
+    String marca;    // Pertenece a una marca
+    boolean isAzul;  // Es color azul
+    boolean isTinta; // Tiene tinta
+    String dictadoTexto;
+    
+            
+    public void main (String marca, boolean isAzul, boolean isTinta,  String dictadoTexto) {
+   
+    this.marca = marca;
+    this.isAzul = isAzul;
+    this.isTinta = isTinta;
+    this.dictadoTexto = dictadoTexto;
+        
+    Scanner teclado = new Scanner(System.in);
+            dictadoTexto=teclado.nextString();
+            
+    }
+    
+    
+    public void escribir (String dictadoTexto){
+System.out.println 
+("
+" _______________________ \n" +
+"|                       |\n" +
+"| " + dictadoTexto +"   |\n" +
+"|          \\           |\n" +
+"|          )\\          |\n" +
+"|           `\\         |\n" +
+"|            (\\        |\n" +
+"|             \\\\      |\n" +
+"|              \\\\     |\n" +
+"|               \\\\    |\n" +
+"|                \\\\   |\n" +
+"|                 \\\\  |\n" +
+"|                  \\\\ |\n" +
+"|___________________\\\\|\n" +
+"                     \\\\\n" +
+"                      \\;"); // Me dice que me falta un ; pero no sé dónde.
