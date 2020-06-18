@@ -1,0 +1,71 @@
+
+package date;
+import java.util.Scanner;
+
+public class Date {
+   
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);  
+        System.out.println("Ingresa el número de año");
+        int año = teclado.nextInt();
+        System.out.println("Ingresa el número del mes");
+        int mes = teclado.nextInt();
+        
+     if (mes == 1||mes == 3||mes == 5||mes == 7||mes == 8||mes == 10){ 
+             System.out.println("Ingresa el número de día");
+         int dia = teclado.nextInt();
+         
+         if (dia<31) {// Enero,Marzo,Mayo,Julio,Agosto,Octubre y Diciembre tienen 31 días
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ dia);
+             System.out.println("El día que sigue es :"+ año +"/"+ mes +"/"+ dia++);
+        }
+             
+         else if (dia == 31) { 
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ dia);
+             System.out.println("El día que sigue es :"+ año +"/"+ mes++ +"/"+ (dia-30));
+        }}     
+        
+    
+     else if (mes == 2){ 
+             System.out.println("Ingresa el número de día");
+         int diad = teclado.nextInt();
+         
+         if (diad<29) {// Febrero tiene 29 días
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ diad);
+             System.out.println("El día que sigue es :"+ año +"/"+ mes +"/" + diad++);
+        }
+             
+         else if (diad == 29) { 
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ diad);
+             System.out.println("El día que sigue es :"+ año +"/"+ ++mes +"/"+ (diad-28));
+        }}    
+     
+     else if (mes == 4||mes == 6||mes == 9||mes == 11);{
+             System.out.println("Ingresa el numero de día");
+         int diat = teclado.nextInt();
+         
+         if (diat<30) {
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ diat);
+             System.out.println("El día que sigue es :"+ año +"/"+ mes +"/" + diat++);
+        }
+         else if (diat == 30) { 
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ diat);
+             System.out.println("El día que sigue es :"+ año +"/"+ ++mes +"/"+ (diat-29));
+        }}
+        
+     if (mes == 12){ 
+             System.out.println("Ingresa el número de día");
+         int diam = teclado.nextInt();
+         
+         if (diam<29) {// Febrero tiene 29 días
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ diam);
+             System.out.println("El día que sigue es :"+ año +"/"+ mes +"/" + diam++);
+        }
+             
+         else if (diam == 29) { 
+             System.out.println("Ésta es tu fecha :"+ año +"/"+ mes +"/"+ diam);
+             System.out.println("El día que sigue es :"+ año +"/"+ ++mes +"/"+ (diam-28));
+        }}        
+    }
+}    
+
